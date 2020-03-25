@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700,800&display=swap');
+
+/* ESTILS GENERALS */
+
+body{
+    margin: 0;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 14px;
+}
+img{
+    width: 100%;
+}
+a:hover{
+    text-decoration: none;
+    font-weight: 400;
+    color: #372db4;
+}
+a{
+    color: black;
+}
+
+/*HEADER*/
+header{
+    padding: 20px 0;
+}
+header .logo img{
+    max-width: 150px;
+}
+header nav{
+    text-align: right;
+    position: fixed;
+    top:75px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 75px);
+    background: #372db4;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    transition: all 0.8s;
+}
+header nav.hide{
+    left: -100%;
+}
+header nav ul{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header li{
+    display: block;
+    margin: 15px 0;
+}
+header li a{
+    font-size: 18px;
+    padding: 5px 8px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.8);
+}
+header li a:hover{
+    color: white;
+}
+header li a.active{
+    color: white;
+    font-weight: 700;
+}
+
+/*MAIN HOME*/
+main.bg-home{
+    background-image: url(../img/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+main .home{
+    /* calucluem el 100% de la pantalla - header*/
+    min-height: calc(100vh - 122px);
+}
+main .home h2{
+    font-weight: 800;
+    color: #ececee;
+    font-size: 90px;
+    margin: 0;
+    line-height: 65px;
+}
+main .home h1{
+    font-weight: 700;
+    color: #000a2e;
+    text-transform: uppercase;
+    font-size: 21px;
+}
+/*a partir de 768px aplica el seguent estil*/
+@media screen and (min-width:768px){
+    header nav{
+        position: relative;
+        background: none;
+        height: auto;
+        top: auto;
+    }
+    header nav ul{
+        text-align: right;
+    }
+    header nav li{
+        display:  inline-block;
+        margin: 0 5px;
+    }
+    header li a{
+        font-size: 14px;
+        color: black;
+    }
+    header li a.active{
+        color: #372db4;
+    }
+    header li a:hover{
+        color: #372db4;
+    }
+    header .burguer{
+        display: none;
+    }
+    main.bg-home{
+       background-position: center center; 
+    }
+    main .home h2{
+        font-size: 170px; 
+        line-height: 130px;
+    }
+    main .home h1{
+        font-size: 40px;
+    }
+}
+
+
+
