@@ -19,21 +19,52 @@ a:hover{
 a{
     color: black;
 }
+.line{
+    background: #e1e1e1;
+    height: 1px;
+    width: 100%;
+}
+.line .circle{
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    border-radius: 8px;
+    position: absolute;
+    margin-top: -4px;
+    background-color: #362cb1;
+}
+.page-header h1{
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+}
+.page-header h2{
+    font-weight: 400;
+    color: #a8a8a8;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+main{
+    padding: 60px 0;
+}
 
 /*HEADER*/
 header{
     padding: 20px 0;
 }
 header .logo img{
-    max-width: 150px;
+    max-height: 55px;
+    width: auto;
 }
 header nav{
     text-align: right;
     position: fixed;
-    top:75px;
+    top:95px;
     left: 0;
     width: 100%;
-    height: calc(100vh - 75px);
+    height: calc(100vh - 95px);
     background: #372db4;
     z-index: 10;
     display: flex;
@@ -76,7 +107,7 @@ main.bg-home{
 }
 main .home{
     /* calucluem el 100% de la pantalla - header*/
-    min-height: calc(100vh - 122px);
+    min-height: calc(100vh - 215px);
 }
 main .home h2{
     font-weight: 800;
@@ -91,6 +122,247 @@ main .home h1{
     text-transform: uppercase;
     font-size: 21px;
 }
+
+/*PORTFOLIO*/
+main .portfolio{
+    padding: 30px 0;
+    overflow: hidden;
+}
+main .portfolio .filter{
+    padding: 20px 0;
+    margin-bottom: 10px;
+}
+main .portfolio .filter span{
+    text-transform: uppercase;
+    color: #7d7d7d;
+    font-size: 12px;
+    margin-right: 5px;
+    padding: 7px 12px;
+    cursor: pointer;
+}
+main .portfolio .filter span:hover{
+    color:#454545;
+}
+main .portfolio .filter span.active{
+    border: 1px solid #454545;
+}
+main .portfolio .items{
+    padding: 0 15px;
+}
+main .portfolio .items .global{
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+}
+main .portfolio .items .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.9);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    opacity: 0;
+    transition: all .5s;
+}
+main .portfolio .global:hover .overlay{
+   opacity: 1; 
+}
+main .portfolio .global h2{
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    text-transform: uppercase;
+}
+main .portfolio .global p{
+    font-size: 12px;
+    width: 100%;
+    color:#2f2f2f;
+}
+main .portfolio .global h3{
+    font-size: 11px;
+    width:100%;
+    text-transform: uppercase;
+}
+
+/*PORTFOLIO SINGLE*/
+main .portfolio-single{
+    padding: 50px 0 30px;
+}
+main .portfolio-single h2{
+    font-weight: 700;
+    color: black;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+main .portfolio-single p.description{
+    font-size: 13px;
+    color: #5a5a5a;
+    line-height: 24px;
+}
+main .portfolio-single p{
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+main .portfolio-single b{
+    font-weight: 700;
+}
+main .portfolio-single h3{
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+main .portfolio-single .btn{
+    border:2px solid black;
+    border-radius: 0;
+    font-size: 12px;
+    margin-top:15px;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+main .gallery{
+    margin-top: 60px;
+}
+main .gallery .slick-arrow{
+    z-index: 10;
+}
+main .gallery .prev{
+    left: 0;
+    position: absolute;
+    top:45%;
+    color: white;
+    border:1px solid white;display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding-top: 4px;
+}
+main .gallery .next{
+    right: 0;
+    position: absolute;
+    top:45%;
+    color: white;
+    border:1px solid white;display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding-top: 4px;
+}
+
+/*CONTACT*/
+main .contact{
+    padding: 50px 0;
+}
+main .contact p{
+    font-size: 13px;
+    color: #4c4c4c;
+}
+main .contact .form, main .contact .info{
+    margin-top: 30px;
+}
+main .contact .info{
+    padding-left: 15px;
+}
+main .contact .form-control{
+    border-radius: 0;
+    margin-bottom: 30px;
+    font-size: 13px;
+    padding: 8px 20px;
+}
+main .contact .btn{
+    border-radius: 0;
+    border:2px solid black;
+    padding: 8px 25px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+main .contact .c-info{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 20px;
+}
+main .contact .c-info h4{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+main .contact .c-info p{
+    font-size: 12px;
+}
+main .mapa{
+    padding: 0;
+    margin-top: 30px;
+}
+main .mapa iframe{
+    width: 100%;
+}
+
+/*ABOUT*/
+main .about{
+    padding: 50px 0;
+}
+main .about p{
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+main .about p b{
+    font-weight: 700;
+}
+main .about hr{
+    padding: 0 15px;
+    margin-bottom: 35px;
+}
+main .about .text{
+    margin-bottom: 20px;
+}
+main .about .btn{
+    margin: 25px 0 15px;
+    border: 2px solid black;
+    border-radius: 0;
+    margin-right: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 8px 20px;
+}
+
+main .skills{
+    padding: 50px 0;
+    background-color: #f7f7f7;
+}
+main .skills .my-skills{
+    padding: 40px 0 20px;
+}
+main .my-skills p{
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+main .my-skills .progress{
+    height: 3px;
+    margin-bottom: 40px;
+}
+main .my-skills .progress-bar{
+    background-color: black;
+}
+
+/*FOOTER*/
+footer{
+    padding: 0px 0 20px;
+}
+footer p{
+    font-size: 11px;
+    color: #9f9f9f;
+    margin-bottom: 0;
+}
 /*a partir de 768px aplica el seguent estil*/
 @media screen and (min-width:768px){
     header nav{
@@ -98,6 +370,9 @@ main .home h1{
         background: none;
         height: auto;
         top: auto;
+    }
+    header nav.hide{
+        left: auto;
     }
     header nav ul{
         text-align: right;
@@ -122,12 +397,19 @@ main .home h1{
     main.bg-home{
        background-position: center center; 
     }
+    main .portfolio .items{
+        padding: 0;
+    }
     main .home h2{
         font-size: 170px; 
         line-height: 130px;
     }
     main .home h1{
         font-size: 40px;
+    }
+    
+    main .contact .info{
+        padding-left: 50px;
     }
 }
 
