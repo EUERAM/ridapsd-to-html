@@ -395,6 +395,118 @@ main .blog .peu .category i{
  margin-right: 10px;   
 }
 
+/*BLOG SINGLE*/
+main .blog-single{
+    padding: 50px 0;
+}
+main .blog-single .global{
+    box-shadow: 0px 0px 5px rgba(0,0,0,.1);
+    border-radius: 3px;
+    overflow: hidden;
+}
+main .blog-single .content{
+    padding: 20px;
+}
+main .blog-single .date{
+    margin-bottom: 5px;
+}
+main .blog-single h2{
+    font-weight: 700;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+main .blog-single .content img{
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    margin-right: 15px;
+}
+main .blog-single .content .category{
+    margin-left: 30px;
+    color: #7b7b7b;
+}
+main .blog-single .content .category i{
+    margin-right: 10px;
+}
+main .blog-single .content .contingut{
+    padding: 40px 0 20px;
+}
+main .blog-single .blog-footer{
+    border-top: 1px solid #eaeaea;
+    padding: 10px 20px;
+}
+main .blog-single .blog-footer p{
+    margin-bottom: 0;
+    color: #838383;
+}
+main .blog-single .blog-footer p a{
+    color: #838383;
+    margin-left: 8px;
+}
+
+main .blog-single .sidebar .global{
+    padding: 20px 0;
+}
+
+main .blog-single .sidebar .widget{
+    padding: 20px 20px 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+main .blog-single .sidebar .widget:last-child{
+    border-bottom: 0;
+}
+.blog-single .sidebar .widget h4{
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.blog-single .sidebar .widget .separator{
+   display: inline-block;
+    height: 2px;
+    background-color: #bdbdbd;
+    width: 50px;
+    margin-bottom: 20px;
+}
+.blog-single .sidebar .search .form-control{
+    border-radius: 0;
+    font-size: 13px;
+}
+.blog-single .sidebar .search .form{
+    position: relative;
+}
+.blog-single .sidebar .search .form i{
+    position: absolute;
+    top:10px;
+    right: 10px;
+}
+.blog-single .widget.last-post .image{
+    padding-right: 0;
+}
+.blog-single .widget.last-post h5{
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 15px;
+    margin-bottom: 3px;
+}
+.blog-single .widget.last-post p{
+    font-size: 13px;
+}
+.blog-single .widget.tags span{
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.blog-single .widget.tags .btn{
+    border-radius: 0;
+    font-size: 13px;
+    border:1px solid #a5a5a5;
+    color: #5a5a5a;
+    padding: 5px 12px;
+}
+
 /*FOOTER*/
 footer{
     padding: 0px 0 20px;
