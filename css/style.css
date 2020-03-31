@@ -354,6 +354,47 @@ main .my-skills .progress-bar{
     background-color: black;
 }
 
+/*BLOG*/
+main .blog{
+    padding: 50px 0;
+}
+main .blog .global{
+    box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+main .blog h3{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 17px;
+    margin: 0;
+}
+main .blog .date{
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+main .blog .content{
+    padding: 20px;
+}
+main .blog .peu{
+    border-top: 1px solid #eaeaea;
+    padding-top: 20px;
+}
+main .blog .peu img{
+    width: 30px;
+    height: 30px;
+    border-radius: 70px;
+    margin-right: 10px;
+}
+main .blog .peu .category{
+    color: #7b7b7b;
+}
+main .blog .peu .category i{
+ margin-right: 10px;   
+}
+
 /*FOOTER*/
 footer{
     padding: 0px 0 20px;
