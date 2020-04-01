@@ -395,6 +395,124 @@ main .blog .peu .category i{
     margin-right: 8px;
 }
 
+/*BLOG SINGLE*/
+main .blog-single{
+    padding: 50px 0;
+}
+main .blog-single .global{
+    box-shadow: 0px 0px 5px rgba(0,0,0,.2);
+    border-radius: 3px;
+    overflow: hidden;
+}
+main .blog-single .content{
+    padding: 20px;
+}
+main .blog-single .date{
+    margin-bottom: 5px;
+}
+main .blog-single h2{
+    font-weight: 700;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+main .blog-single .author{
+    margin-bottom: 40px;
+}
+main .blog-single .author img{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    border-radius: 40px;
+}
+main .blog-single .author .category{
+    margin-left: 30px;
+    color: #7b7b7b;
+}
+main .blog-single .author .category i{
+    margin-right: 10px;
+}
+main .blog-single .blog-footer{
+    border-top: 1px solid #eaeaea;
+    padding: 10px 20px;
+}
+main .blog-single .blog-footer p{
+    margin-bottom: 0;
+    color: #838383;
+    font-size: 13px;
+}
+main .blog-single .share a{
+    margin-left: 8px;
+    color: #838383;
+}
+
+main .sidebar .global{
+    padding: 20px 0;
+}
+main .sidebar .widget{
+    padding: 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+main .sidebar .widget:last-child{
+    border-bottom: 0;
+}
+main .sidebar .widget h4{
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+main .sidebar .widget .separator{
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: #bdbdbd;
+    margin-bottom: 20px;
+}
+main .sidebar .search .form-control{
+    border-radius: 0;
+    font-size: 13px;
+}
+main .sidebar .search .form{
+    position: relative;
+}
+main .sidebar .search .form i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+main .sidebar .last-post .post{
+    margin-bottom: 15px;
+}
+main .sidebar .last-post .image{
+    padding-right: 0;
+}
+main .sidebar .last-post h5{
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+main .sidebar .last-post p{
+    margin-bottom: 0;
+    font-size: 13px;
+}
+main .sidebar .last-post p a{
+    color: black;
+    font-weight: 400;
+}
+main .sidebar .tags span{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+main .sidebar .tags span .btn{
+    border-radius: 0;
+    border:1px solid #a5a5a5;
+    font-size: 13px;
+    padding: 5px 10px;
+}
+
 /*FOOTER*/
 footer{
     padding: 0px 0 20px;
